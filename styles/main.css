@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "moonl";
+    src: url('../fonts/Moon Light.otf') format("woff");
+}
+@font-face {
+    font-family: "moonb";
+    src: url('../fonts/Moon Bold.otf') format("woff");
+}
 :root{
 	--color-a:#005c4c;
 	--color-b:#07352d;
@@ -18,13 +26,28 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	width:100%;
-	font-family: Arial;
+	font-family: "moonl";
+	letter-spacing:"10px";
 	font-size: 10px;
+}
+i.camera-logo{
+	font-size:35px;
+	position:relative;
+	top:4px;
+	right:10px
+}
+.head-icon{
+	font-size:40px;
+	letter-spacing:10px;
+	font-weight:lighter;
+	font-family:"moonl";
+}
+.head-ocr{
+	font-family:"moonb";
 }
 .header{
 	box-sizing: border-box;
-	color:white;
-	background: var(--color-b);
+	color:var(--color-a);
 	width:100%;
 	height:10%;
 	padding:10px 30px;
@@ -32,7 +55,7 @@ body{
 .form{
 	position:absolute;
 	z-index: -15;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 	margin: -100px 0 0 -150px;
 }
@@ -58,7 +81,7 @@ body{
 }
 .inputfile + label {
     color: white;
-    background-color: var(--color-btn-a);
+    background-color: var(--color-a);
     width:250px;
     text-align: center;
    	padding:var(--padding-btn);
@@ -74,7 +97,7 @@ cursor: pointer;
 .inputfile + label:hover ,
 #submit-btn:focus,
 #submit-btn:hover{
-    background-color: var(--color-btn-b);
+    background-color: var(--color-b);
     outline: 1px dotted #000;
 	outline: -webkit-focus-ring-color auto 5px;
 }
