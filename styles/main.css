@@ -217,6 +217,9 @@ i.github-icon:hover,i.github-icon:focus{
 }
 @media screen and (max-width:1024px)
 {
+	.form{
+		left:60%;
+	}
 	.help-col{
 		margin-top:20px;
 	}
@@ -239,21 +242,21 @@ i.github-icon:hover,i.github-icon:focus{
 	}
 	.feed-form{
 		position: absolute;
-		width:90%;
+		width:80%;
 	}
 	.feed-form>input{
-		width:95%;
+		width:93%;
 		margin-top:20px;
 		padding:10px;
 		border:none;
 		border-radius: 2px;
 	}
 	.feed-form>input[type=textarea]{
-		width:95%;
+		width:93%;
 		height:100px;
 	}
 	.feed-form>input[type=submit]{
-		width:98%;
+		width:100%;
 		background-color:var(--color-btn-a);
 		color:white;
 	}
