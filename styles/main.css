@@ -45,6 +45,13 @@ i.camera-logo{
 .head-ocr{
 	font-family:"moonb";
 }
+.head-logo{
+	height:30px;
+	width:30px;
+	margin-right:10px;
+	position:relative;
+	top:3px;
+}
 .header{
 	box-sizing: border-box;
 	position: fixed;
@@ -56,10 +63,10 @@ i.camera-logo{
 }
 .form-div{
 	height:100vh;
+	z-index:-15;
 }
 .form{
 	position:absolute;
-	z-index: -15;
 	top: 60%;
 	left: 50%;
 	margin: -100px 0 0 -150px;
@@ -69,6 +76,8 @@ i.camera-logo{
 	width:250px;
 }
 #image-view{
+	z-index:-15;
+	position: fixed;
 	width:250px;
 	height:250px;
 	display:none;
@@ -85,6 +94,7 @@ i.camera-logo{
 	z-index: -1;
 }
 .inputfile + label {
+	z-index:-10;
 	position:fixed;
     color: white;
     background-color: var(--color-a);
@@ -134,16 +144,47 @@ i.github-icon:hover,i.github-icon:focus{
 	background: rgba(0, 92, 76, 0.95);
 	padding:30px;
 }
+.contact-div{
+	box-sizing: border-box;
+	background: rgb(4, 66, 55);
+	padding:30px;
+}
 .help-col{
 	box-sizing: border-box;
 	color:white;
-	border:1px solid white;
 	border-radius: 5px;
 	padding:30px;
-	height:200px;
+	height:300px;
 	font-size: 20px;
 }
-
+.feed-form{
+	position: absolute;
+	width:45%;
+}
+.feed-form>input{
+	width:45%;
+	margin-top:20px;
+	padding:10px;
+	border:none;
+	border-radius: 2px;
+}
+.feed-form>input[type=textarea]{
+	width:94%;
+	height:100px;
+}
+.feed-form>input[type=submit]{
+	width:97%;
+	background-color:var(--color-btn-a);
+	color:white;
+}
+.feed-form>input[type=submit]:hover{
+	background-color:var(--color-btn-b);
+}
+.column-4>h1,.column-6>h1{
+	font-size:20px;
+	letter-spacing: 3px;
+	font-weight: lighter;
+}
 /* CSS Grid */
 .row{
 	width:100%;
@@ -159,6 +200,12 @@ i.github-icon:hover,i.github-icon:focus{
 		text-align:center;
 		display: inline-block;
 	}
+	.column-6{
+		padding:10px;
+		width:49%;
+		text-align:center;
+		display: inline-block;
+	}
 }
 @media screen and (max-width:1024px)
 {
@@ -166,6 +213,13 @@ i.github-icon:hover,i.github-icon:focus{
 		margin-top:20px;
 	}
 	.column-4{
+		box-sizing: border-box;
+		padding:10px;
+		width:100%;
+		text-align:center;
+		display: block;
+	}
+	.column-6{
 		box-sizing: border-box;
 		padding:10px;
 		width:100%;

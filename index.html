@@ -7,13 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<script src="scripts/jquery.js" type="text/javascript"></script>
 	<script src="scripts/main.js" type="text/javascript"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="images/logo.png">
 </head>
 <body>
 	<div class="header">
-	<h1 class="head-icon"><i class="material-icons camera-logo">camera</i>Math<span class="head-ocr">OCR</span></h1>
+	<h1 class="head-icon"><img src="images/logo.png" class="head-logo">Math<span class="head-ocr">OCR</span></h1>
 	</div>
 	<div class="main">
 		<div class="row form-div">
@@ -21,15 +20,35 @@
 				<form enctype="multipart/form-data" class="form-class">
 					<img id="image-view"/>
 					<input type="file" id="file" name="imageData" class="inputfile" accept="image/*;capture=camera"/>
-					<label for="file" id="file-upload-label"><i class="material-icons" style="font-size:20px;position:relative;top:2px;right:10px">camera</i>Attach a file</label>
+					<label for="file" id="file-upload-label"><i class="fa fa-camera-retro" style="margin-right:10px"></i>Attach a file</label>
 					<input type="submit" value="Upload Image" name="submit" id="submit-btn">
 				</form>
 			</div>
 		</div>
 		<div class="row help-div">
-			<div class="column-4 help-col">arrey</div>
-			<div class="column-4 help-col">bhaiya</div>
-			<div class="column-4 help-col">bhago</div>
+			<div class="column-4 help-col">
+				<h1>Perform Calculations</h1>
+			</div>
+			<div class="column-4 help-col">
+				<h1>Solve linear equations</h1>
+			</div>
+			<div class="column-4 help-col">
+				<h1>Plot curves</h1>
+			</div>
+		</div>
+		<div class="row contact-div">
+			<div class="column-6 help-col">
+				<h1>Contact Us</h1>
+			</div>
+			<div class="column-6 help-col">
+				<h1>Feedback</h1>
+				<form class="feed-form">
+					<input type="text" placeholder="NAME" name="name"/>
+					<input type="text" placeholder="EMAIL ID" name="emailid"/>
+					<input type="textarea" placeholder="MESSAGE" name="message"/>
+					<input type="submit" value="SUBMIT"/>
+				</form>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
