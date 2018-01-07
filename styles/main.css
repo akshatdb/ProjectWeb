@@ -262,4 +262,10 @@ i.github-icon:hover,i.github-icon:focus{
 	}
 
 }
+@media (max-width:400px)
+{
+	.head-icon{
+		font-size:35px;
+	}
+}
 
