@@ -55,18 +55,20 @@ i.camera-logo{
 .header{
 	box-sizing: border-box;
 	position: fixed;
-	z-index: -10;
+	z-index: -1;
 	color:var(--color-a);
 	width:100%;
 	height:10%;
 	padding:10px 30px;
 }
 .form-div{
+	position:relative;
+	z-index:0;
 	height:100vh;
-	z-index:-15;
 }
 .form{
 	position:absolute;
+	z-index:0;
 	top: 60%;
 	left: 50%;
 	margin: -100px 0 0 -150px;
@@ -76,14 +78,16 @@ i.camera-logo{
 	width:250px;
 }
 #image-view{
-	z-index:-15;
 	position: fixed;
+	z-index:1;
 	width:250px;
 	height:250px;
 	display:none;
 }
 #file-upload-label{
 	box-sizing:border-box;
+	position:fixed;
+	z-index:2;
 }
 .inputfile,#submit-btn	 {
 	width: 0.1px;
@@ -91,10 +95,10 @@ i.camera-logo{
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 }
 .inputfile + label {
-	z-index:-10;
+	z-index:2;
 	position:fixed;
     color: white;
     background-color: var(--color-a);
@@ -140,11 +144,15 @@ i.github-icon:hover,i.github-icon:focus{
 	color:#00b4ff;
 }
 .help-div{
+	position: relative;
+	z-index: 3;
 	box-sizing: border-box;
 	background: rgba(0, 92, 76, 0.95);
 	padding:30px;
 }
 .contact-div{
+	position: relative;
+	z-index: 3;
 	box-sizing: border-box;
 	background: rgb(4, 66, 55);
 	padding:30px;
