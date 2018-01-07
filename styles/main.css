@@ -55,7 +55,7 @@ i.camera-logo{
 	padding:10px 30px;
 }
 .form-div{
-	height:600px;
+	height:100vh;
 }
 .form{
 	position:absolute;
@@ -150,9 +150,6 @@ i.github-icon:hover,i.github-icon:focus{
 }
 @media screen and (min-width:1024px)
 {
-	.help-div{
-		height:300px;
-	}
 	.help-col{
 		margin:5px;
 	}
@@ -165,9 +162,6 @@ i.github-icon:hover,i.github-icon:focus{
 }
 @media screen and (max-width:1024px)
 {
-	.help-div{
-		height:700px;
-	}
 	.help-col{
 		margin-top:20px;
 	}
