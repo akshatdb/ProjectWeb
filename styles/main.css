@@ -55,7 +55,7 @@ i.camera-logo{
 .header{
 	box-sizing: border-box;
 	position: fixed;
-	z-index: -1;
+	z-index: 10;
 	color:var(--color-a);
 	width:100%;
 	height:10%;
@@ -123,6 +123,9 @@ cursor: pointer;
 	outline: -webkit-focus-ring-color auto 5px;
 }
 .footer{
+	position: absolute;
+	bottom:-750px;
+	z-index:5;
 	box-sizing: border-box;
 	background:var(--footer-color);
 	color:var(--footer-font-color);
@@ -145,15 +148,18 @@ i.github-icon:hover,i.github-icon:focus{
 	color:#00b4ff;
 }
 .help-div{
-	position: relative;
+	position: absolute;
+	bottom:-400px;
+	height:400px;
 	z-index: 3;
 	box-sizing: border-box;
 	background: rgba(0, 92, 76, 0.95);
 	padding:30px;
 }
 .contact-div{
-	position: relative;
-	z-index: 3;
+	position: absolute;
+	bottom:-700px;
+	z-index: 4;
 	box-sizing: border-box;
 	background: rgb(4, 66, 55);
 	padding:30px;
@@ -169,14 +175,14 @@ i.github-icon:hover,i.github-icon:focus{
 .feed-form>input[type=submit]:hover{
 	background-color:var(--color-btn-b);
 }
+/* CSS Grid */
+.row{
+	width:100%;
+}
 .column-4>h1,.column-6>h1{
 	font-size:20px;
 	letter-spacing: 3px;
 	font-weight: lighter;
-}
-/* CSS Grid */
-.row{
-	width:100%;
 }
 @media screen and (min-width:1024px)
 {

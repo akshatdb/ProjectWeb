@@ -15,4 +15,22 @@ $('#file').on('change',function(){
 		$('#image-view').fadeIn();
 	}
 });
+var oh = $('.help-div').offset();
+var oc = $('.contact-div').offset();
+var w = $(window)
+$(window).scroll(function(){
+	yh = oh.top - w.scrollTop();
+	yc = oc.top - w.scrollTop();
+	$('.help-div').css({
+			'position':'fixed',
+			'top':'60px'
+	});
+	if(yc>=450)
+	{
+		$('.help-div').css({
+			'position':'absolute',
+			'top':'560px'
+		});
+	}
+});
 });
