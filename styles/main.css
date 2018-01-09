@@ -208,7 +208,11 @@ i.github-icon:hover,i.github-icon:focus{
 		border:none;
 		border-radius: 2px;
 	}
-	.feed-form>input[type=textarea]{
+	.feed-form>type=textarea{
+		margin-top:20px;
+		padding:10px;
+		border:none;
+		border-radius:2px;
 		width:94%;
 		height:100px;
 	}
@@ -254,7 +258,11 @@ i.github-icon:hover,i.github-icon:focus{
 		border:none;
 		border-radius: 2px;
 	}
-	.feed-form>input[type=textarea]{
+	.feed-form>textarea{
+		margin-top:20px;
+		padding:10px;
+		border:none;
+		border-radius:2px;
 		width:93%;
 		height:100px;
 	}
