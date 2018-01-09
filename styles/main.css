@@ -202,13 +202,13 @@ i.github-icon:hover,i.github-icon:focus{
 		width:45%;
 	}
 	.feed-form>input{
-		width:45%;
+		width:45.3%;
 		margin-top:20px;
 		padding:10px;
 		border:none;
 		border-radius: 2px;
 	}
-	.feed-form>type=textarea{
+	.feed-form>textarea{
 		margin-top:20px;
 		padding:10px;
 		border:none;
